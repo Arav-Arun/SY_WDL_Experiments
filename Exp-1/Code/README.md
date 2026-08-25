@@ -1,36 +1,14 @@
-# KisanSaathi - AI-Based Smart Irrigation Advisory System
+### Aim
 
-**Use Case ID:** KJS-AGR-01  
-**Course:** Web Development Laboratory (`316U01L306`), Semester III
+To design and develop a multi-page, use-case-based web portal front-end using HTML5 for an **AI-based Smart Irrigation Advisory System for Sugarcane Crop**, demonstrating proper HTML5 document structure, semantic elements, formatting, lists, hyperlinks, images, image maps, tables, forms, and multimedia elements.
 
-**Live Demo:** [https://kisan-saathi-wdl.vercel.app](https://kisan-saathi-wdl.vercel.app)
+### Conclusion
 
----
+The experiment demonstrated the design and development of a multi-page **AI-based Smart Irrigation Advisory Web Portal** using HTML5.
 
-## Overview
-
-KisanSaathi is an AI and IoT-enabled decision support platform built for sugarcane farmers in Northern Karnataka. It replaces traditional experience-based irrigation with data-driven advisories derived from soil moisture sensors, weather forecasts, satellite imagery, and predictive machine learning models.
-
-### Key Features
-
-- **Plot-Specific Recommendations:** Precise guidance on irrigation timing and duration.
-- **Resource Optimization:** Reduces water wastage, energy consumption, and soil degradation.
-- **Multilingual Support:** Generates advisories in local languages for registered farmers.
-
----
-
-### Course Outcomes
-
-| CO Code | Description                                                                          |
-| :-----: | :----------------------------------------------------------------------------------- |
-| **CO1** | Develop web pages using semantic HTML5 and CSS3.                                     |
-| **CO2** | Implement responsive web layouts with modern styling frameworks.                     |
-| **CO3** | Build interactive pages using JavaScript DOM manipulation and jQuery event handling.  |
-| **CO4** | Create component-based single-page applications using React.js.                      |
-| **CO5** | Integrate front-end interfaces with mock APIs and full-stack backends.               |
-
----
-
-## Project Team
-
-- **Student Contributors:** Arav Arun, Mrudul Bhagwat, Mohammed Attar, Eshika Arya
+- Implemented proper HTML5 semantic structure using elements such as `<header>`, `<nav>`, `<section>`, `<article>`, `<aside>`, and `<footer>`.
+- Used lists, formatting tags, hyperlinks, images, image maps, and tables to organize and present agricultural information effectively.
+- Developed a farmer registration form using HTML5 input types and validation attributes such as `required`, `pattern`, `placeholder`, and `autofocus`.
+- Integrated weather information and farm location using `<iframe>`.
+- Added multimedia content using video, audio, and alert functionality.
+- Gained practical understanding of how HTML5 can be used to build the front-end of a real-world smart agriculture and IoT-based application.
