@@ -1,0 +1,292 @@
+/* ============================================
+   KisanSaathi - Shared Stylesheet
+   AI-Based Smart Irrigation Advisory System
+   ============================================ */
+
+/* ---------- Reset & Base ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9faf8;
+    padding: 0;
+}
+
+/* ---------- Header ---------- */
+header {
+    background: linear-gradient(135deg, #2e7d32, #43a047);
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 0.95rem;
+    margin-top: 0.3rem;
+    opacity: 0.9;
+}
+
+/* ---------- Navigation ---------- */
+nav {
+    background-color: #1b5e20;
+    padding: 0.6rem 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+nav a {
+    color: #e8f5e9;
+    text-decoration: none;
+    margin: 0.2rem 0.5rem;
+    font-size: 0.95rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    display: inline-block;
+    transition: background 0.2s;
+}
+
+nav a:hover {
+    background-color: #388e3c;
+    color: #fff;
+}
+
+section {
+    padding: 1rem 2rem;
+    max-width: 100%;
+}
+
+article {
+    padding: 0.5rem 0;
+    max-width: 100%;
+}
+
+h2 {
+    color: #2e7d32;
+    margin: 1rem 0 0.5rem;
+    border-bottom: 2px solid #a5d6a7;
+    padding-bottom: 0.3rem;
+}
+
+h3 {
+    color: #33691e;
+    margin: 1rem 0 0.5rem;
+}
+
+/* ---------- Lists ---------- */
+ol, ul, dl {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+dt {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-top: 0.5rem;
+}
+
+dd {
+    margin-left: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+/* ---------- Tables ---------- */
+table {
+    width: 90%;
+    max-width: 100%;
+    margin: 1rem auto;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+caption {
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.7rem;
+    color: #2e7d32;
+}
+
+th {
+    background-color: #2e7d32;
+    color: #fff;
+    padding: 0.65rem 0.8rem;
+    text-align: left;
+}
+
+td {
+    padding: 0.55rem 0.8rem;
+    border: 1px solid #c8e6c9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e8f5e9;
+}
+
+tfoot td {
+    background-color: #c8e6c9;
+    font-weight: bold;
+}
+
+/* ---------- Forms ---------- */
+fieldset {
+    border: 2px solid #a5d6a7;
+    border-radius: 6px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    max-width: 100%;
+}
+
+legend {
+    font-weight: bold;
+    color: #2e7d32;
+    padding: 0 0.5rem;
+    font-size: 1.05rem;
+}
+
+label {
+    font-weight: 600;
+    color: #333;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.45rem 0.6rem;
+    border: 1px solid #a5d6a7;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    margin-top: 0.2rem;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+select:focus {
+    outline: none;
+    border-color: #2e7d32;
+    box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.2);
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+input[type="submit"] {
+    background-color: #2e7d32;
+    color: #fff;
+}
+
+input[type="submit"]:hover {
+    background-color: #1b5e20;
+}
+
+input[type="reset"] {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+input[type="reset"]:hover {
+    background-color: #bdbdbd;
+}
+
+/* ---------- Images & Figures ---------- */
+figure {
+    display: inline-block;
+    text-align: center;
+    margin: 0.5rem;
+    max-width: 100%;
+}
+
+figcaption {
+    font-size: 0.85rem;
+    color: #555;
+    margin-top: 0.3rem;
+    font-style: italic;
+}
+
+img {
+    border-radius: 4px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---------- Horizontal Rules ---------- */
+hr {
+    border: none;
+    border-top: 1px solid #c8e6c9;
+    margin: 1rem 0;
+}
+
+/* ---------- Mark / Highlight ---------- */
+mark {
+    background-color: #fff9c4;
+    padding: 0.1rem 0.3rem;
+    border-radius: 2px;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background-color: #1b5e20;
+    color: #e8f5e9;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+/* ---------- Aside ---------- */
+aside {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+/* ---------- Links (general) ---------- */
+a {
+    color: #2e7d32;
+}
+
+a:hover {
+    color: #1b5e20;
+}
+
+/* ---------- IFrame ---------- */
+iframe {
+    border: 1px solid #c8e6c9;
+    border-radius: 4px;
+    margin: 0.5rem 0;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    box-sizing: border-box;
+}

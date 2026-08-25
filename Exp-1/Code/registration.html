@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Registration - KisanSaathi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>KisanSaathi</h1>
+        <p>Smart Irrigation using AI &amp; Sensor Technology</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="farm-info.html">Farm Info</a>
+        <a href="advisory.html">Advisory</a>
+        <a href="irrigation-table.html">Dashboard</a>
+        <a href="media.html">Media</a>
+        <a href="plot-map.html">Plot Map</a>
+        <a href="weather.html">Weather</a>
+        <a href="registration.html">Register</a>
+    </nav>
+
+    <section>
+        <h2>Farmer Registration Form</h2>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+
+            <table style="width:100%; border:none; box-shadow:none;">
+                <tr>
+                    <td style="width:50%; vertical-align:top; border:none; padding:0 0.5rem 0 0;">
+                        <!-- Personal Information -->
+                        <fieldset>
+                            <legend>Personal Information</legend>
+
+                            <label for="name">Full Name:</label><br>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required autofocus><br><br>
+
+                            <label for="mobile">Mobile Number:</label><br>
+                            <input type="tel" id="mobile" name="mobile" placeholder="10-digit mobile number" pattern="[0-9]{10}" required><br><br>
+
+                            <label for="email">Email Address:</label><br>
+                            <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
+
+                            <label for="village">Village:</label><br>
+                            <input type="text" id="village" name="village" placeholder="Enter village name" required><br><br>
+                        </fieldset>
+                    </td>
+                    <td style="width:50%; vertical-align:top; border:none; padding:0 0 0 0.5rem;">
+                        <!-- Farm Details -->
+                        <fieldset>
+                            <legend>Farm Details</legend>
+
+                            <label for="plotid">Plot ID:</label><br>
+                            <input type="text" id="plotid" name="plotid" placeholder="e.g. PLOT-A" required><br><br>
+
+                            <label for="cropstage">Crop Stage:</label><br>
+                            <select id="cropstage" name="cropstage" required>
+                                <option value="" disabled selected>-- Select Crop Stage --</option>
+                                <option value="germination">Germination</option>
+                                <option value="tillering">Tillering</option>
+                                <option value="grand-growth">Grand Growth</option>
+                                <option value="maturity">Maturity</option>
+                            </select><br><br>
+
+                            <label for="soiltype">Soil Type:</label><br>
+                            <select id="soiltype" name="soiltype" required>
+                                <option value="" disabled selected>-- Select Soil Type --</option>
+                                <option value="black-cotton">Black Cotton Soil</option>
+                                <option value="red-laterite">Red Laterite Soil</option>
+                                <option value="alluvial">Alluvial Soil</option>
+                                <option value="sandy">Sandy Soil</option>
+                                <option value="clay">Clay Soil</option>
+                            </select><br><br>
+
+                            <label>Irrigation Method:</label><br>
+                            <input type="radio" id="drip" name="irrigation" value="drip" required>
+                            <label for="drip">Drip Irrigation</label><br>
+                            <input type="radio" id="furrow" name="irrigation" value="furrow">
+                            <label for="furrow">Furrow Irrigation</label><br>
+                            <input type="radio" id="sprinkler" name="irrigation" value="sprinkler">
+                            <label for="sprinkler">Sprinkler Irrigation</label><br>
+                            <input type="radio" id="flood" name="irrigation" value="flood">
+                            <label for="flood">Flood Irrigation</label><br><br>
+
+                            <label for="date">Registration Date:</label><br>
+                            <input type="date" id="date" name="date" required><br><br>
+
+                            <label for="photo">Upload Farm Photo:</label><br>
+                            <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+
+
+            <div style="text-align:center; margin-top:1rem;">
+                <input type="submit" value="Register">
+                <input type="reset" value="Clear Form">
+            </div>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>WDL Experiment 1 | SY COMPS Sem 3 | A1 Batch</p>
+    </footer>
+
+</body>
+</html>

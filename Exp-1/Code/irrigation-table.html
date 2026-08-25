@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Moisture &amp; Irrigation Table - KisanSaathi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>KisanSaathi</h1>
+        <p>Smart Irrigation using AI &amp; Sensor Technology</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="farm-info.html">Farm Info</a>
+        <a href="advisory.html">Advisory</a>
+        <a href="irrigation-table.html">Dashboard</a>
+        <a href="media.html">Media</a>
+        <a href="plot-map.html">Plot Map</a>
+        <a href="weather.html">Weather</a>
+        <a href="registration.html">Register</a>
+    </nav>
+
+    <section>
+        <h2>Soil Moisture &amp; Irrigation Recommendations</h2>
+
+        <table border="1" cellpadding="8" cellspacing="0">
+            <caption><strong>Current Irrigation Recommendations for Farm Plots</strong></caption>
+
+            <thead>
+                <tr>
+                    <th>Plot ID</th>
+                    <th>Farmer Name</th>
+                    <th>Soil Moisture (%)</th>
+                    <th>Weather</th>
+                    <th>Irrigation Recommendation</th>
+                    <th>Water Requirement (L)</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- Plot A - two rows sharing the same Plot ID and Farmer using rowspan -->
+                <tr>
+                    <td rowspan="2">A</td>
+                    <td rowspan="2">Ramesh Kumar</td>
+                    <td>22</td>
+                    <td>Sunny</td>
+                    <td>Start irrigation - 4 hrs (Morning)</td>
+                    <td>1200</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Sunny</td>
+                    <td>Start irrigation - 2 hrs (Evening)</td>
+                    <td>600</td>
+                </tr>
+
+                <!-- Plot B -->
+                <tr>
+                    <td>B</td>
+                    <td>Sunita Patel</td>
+                    <td>38</td>
+                    <td>Cloudy</td>
+                    <td>Delay - Soil moisture adequate</td>
+                    <td>0</td>
+                </tr>
+
+                <!-- Plot C - two rows sharing the same Plot ID and Farmer using rowspan -->
+                <tr>
+                    <td rowspan="2">C</td>
+                    <td rowspan="2">Manoj Singh</td>
+                    <td>15</td>
+                    <td>Rainy</td>
+                    <td>Post-rain check - 2 hrs</td>
+                    <td>600</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>Overcast</td>
+                    <td>Light irrigation - 1 hr</td>
+                    <td>300</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="5"><strong>Total Water Requirement</strong></td>
+                    <td><strong>2700 L</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <footer>
+        <p>WDL Experiment 1 | SY COMPS Sem 3 | A1 Batch</p>
+    </footer>
+
+</body>
+</html>

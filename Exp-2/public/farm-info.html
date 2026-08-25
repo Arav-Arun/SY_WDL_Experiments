@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Information - KisanSaathi</title>
+
+    <!-- Task 3: External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Task 9: Layout CSS -->
+    <link rel="stylesheet" href="css/layout.css">
+
+    <!-- Task 4: Internal CSS for Sidebar Card -->
+    <style>
+        .sidebar {
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            border-radius: 6px;
+            background-color: #ffffff;
+        }
+
+        .sidebar ul li {
+            padding: 0.45rem 0.6rem;
+            margin-bottom: 0.25rem;
+            border-radius: 4px;
+            list-style: none;
+        }
+
+        .sidebar ul li:hover {
+            background-color: #e8f5e9;
+            color: #1b5e20;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>KisanSaathi</h1>
+        <p>Smart Irrigation using AI &amp; Sensor Technology</p>
+    </header>
+
+    <!-- Task 9: Sidebar + Content Layout -->
+    <div class="page-wrapper">
+
+        <!-- Task 4: Categories Sidebar Card -->
+        <aside class="sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#workflow">Irrigation Workflow</a></li>
+                <li><a href="#sensors">Sensors Used</a></li>
+                <li><a href="#stages">Crop Stages</a></li>
+                <li><a href="plot-map.html">Plot Map</a></li>
+                <li><a href="advisory.html">Advisory</a></li>
+                <li><a href="weather.html">Weather Data</a></li>
+                <li><a href="registration.html">Register Farm</a></li>
+            </ul>
+        </aside>
+
+        <div class="main-content">
+            <section id="workflow">
+                <h3>Irrigation Workflow</h3>
+                <ol>
+                    <li>Check <b>soil moisture sensor</b> reading for the plot</li>
+                    <li>Compare reading with the <i>crop water requirement</i> for current growth stage</li>
+                    <li>Fetch latest rainfall and temperature data</li>
+                    <li>System generates irrigation recommendation</li>
+                    <li><mark>Irrigate field</mark> if water stress level is high</li>
+                    <li>Log irrigation event and update dashboard</li>
+                </ol>
+            </section>
+
+            <section id="sensors">
+                <h3>Sensors Used</h3>
+                <ul>
+                    <li>Soil Moisture Sensor</li>
+                    <li>Temperature Sensor</li>
+                    <li>Humidity Sensor</li>
+                    <li>Rainfall Sensor</li>
+                </ul>
+            </section>
+
+            <section id="stages">
+                <h3>Crop Stages</h3>
+                <dl>
+                    <dt>Germination</dt>
+                    <dd>Seed sprouting stage; requires <mark>consistent soil moisture</mark> and light irrigation.</dd>
+
+                    <dt>Tillering</dt>
+                    <dd>Multiple shoots develop from the base. moderate water requirement.</dd>
+
+                    <dt>Grand Growth</dt>
+                    <dd><b>Highest water demand</b> stage, rapid stalk and leaf development.</dd>
+
+                    <dt>Maturity</dt>
+                    <dd>Water requirement <i>decreases</i> as the crop ripens before harvest.</dd>
+                </dl>
+            </section>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>WDL Experiment 2 | SY COMPS Sem 3 | A1 Batch</p>
+    </footer>
+</body>
+</html>

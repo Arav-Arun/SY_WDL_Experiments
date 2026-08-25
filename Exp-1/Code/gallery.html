@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Gallery</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color:transparent;
+            text-align:center;
+            margin:0;
+            padding:4px;
+        }
+
+        .gallery{
+            display:flex;
+            justify-content:space-between;
+            align-items:flex-start;
+            gap:12px;
+            flex-wrap:nowrap;
+            margin:0;
+        }
+
+        .card{
+            flex:1;
+            min-width:0;
+            background:white;
+            border-radius:10px;
+            box-shadow:0px 3px 8px rgba(0,0,0,0.15);
+            overflow:hidden;
+            transition: box-shadow 0.3s;
+        }
+
+        .card:has(details[open]){
+            box-shadow:0px 4px 16px rgba(46,125,50,0.3);
+        }
+
+        .card figure{
+            margin:0;
+        }
+
+        .card img{
+            width:100%;
+            height:160px;
+            object-fit:cover;
+            display:block;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        .card img:hover{
+            opacity:0.85;
+        }
+
+        summary{
+            cursor:pointer;
+            list-style:none;
+            margin:0;
+            padding:0;
+            user-select:none;
+        }
+        summary::-webkit-details-marker{
+            display:none;
+        }
+
+        .card figcaption{
+            padding:8px 6px;
+            font-weight:bold;
+            font-size:0.85rem;
+            color:#2e7d32;
+            background:#fff;
+        }
+
+        /* Expand hint */
+        .card .hint{
+            font-size:0.72rem;
+            color:#777;
+            padding:0 6px 8px;
+            margin:0;
+        }
+
+        details[open] .hint{
+            display:none;
+        }
+
+        /* --- Expanded detail info --- */
+        .info{
+            padding:8px 10px;
+            margin:0 6px 8px;
+            background:#f1f8e9;
+            border:1px solid #c8e6c9;
+            border-radius:8px;
+            text-align:left;
+            line-height:1.4;
+            font-size:0.78rem;
+        }
+
+        .info h3{
+            color:#2e7d32;
+            margin:0 0 6px;
+            font-size:0.88rem;
+            border-bottom:1px solid #c8e6c9;
+            padding-bottom:3px;
+        }
+
+        .info ul{
+            margin:0;
+            padding-left:14px;
+        }
+
+        .info li{
+            margin-bottom:4px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="gallery">
+
+    <!-- Card 1: Sugarcane Crop -->
+    <div class="card">
+        <figure>
+            <details>
+                <summary>
+                    <img src="assets/sugarcane_crop.png"
+                    alt="Healthy Sugarcane Crop"
+                    title="Healthy Sugarcane Crop (Click to open/close)"
+                    width="280"
+                    height="180">
+                    <figcaption>Healthy Sugarcane Crop</figcaption>
+                </summary>
+
+                <div class="info" id="info-sugarcane">
+                    <h3>Healthy Sugarcane Crop</h3>
+                    <ul>
+                        <li><b>Tropical Crop:</b> Cultivated for sugar, jaggery, ethanol, and biofuel.</li>
+                        <li><b>Climate:</b> Requires warm temperatures between <i>20°C and 35°C</i>.</li>
+                        <li><b>Optimal Soil:</b> Thrives in fertile, well-drained loamy soil with sunlight.</li>
+                        <li><b>Moisture Range:</b> Ideal soil moisture is <i>60–80%</i> of field capacity.</li>
+                        <li><b>Water Need:</b> Requires <i>1500–2500 mm</i> of water across the season.</li>
+                    </ul>
+                </div>
+            </details>
+            <p class="hint">▸ Click image to view details</p>
+        </figure>
+    </div>
+
+
+
+    <!-- Card 2: Drip Irrigation -->
+    <div class="card">
+        <figure>
+            <details>
+                <summary>
+                    <img src="assets/drip_irrigation.png"
+                    alt="Drip Irrigation System"
+                    title="Drip Irrigation System (Click to open/close)"
+                    width="280"
+                    height="180">
+                    <figcaption>Drip Irrigation System</figcaption>
+                </summary>
+
+                <div class="info" id="info-drip">
+                    <h3>Drip Irrigation System</h3>
+                    <ul>
+                        <li><b>Root Delivery:</b> Supplies water slowly and directly through pipes and emitters.</li>
+                        <li><b>Water Savings:</b> Reduces water consumption by <i>30–60%</i> vs flood method.</li>
+                        <li><b>Minimized Loss:</b> Reduces surface runoff and soil evaporation significantly.</li>
+                        <li><b>Fertigation:</b> Delivers liquid fertilizers directly to crop roots efficiently.</li>
+                        <li><b>Key Components:</b> Pipelines, drip laterals, emitters, filters, and valves.</li>
+                    </ul>
+                </div>
+            </details>
+            <p class="hint">▸ Click image to view details</p>
+        </figure>
+    </div>
+
+
+
+    <!-- Card 3: Soil Sensor -->
+    <div class="card">
+        <figure>
+            <details>
+                <summary>
+                    <img src="assets/soil_sensor.png"
+                    alt="Soil Moisture Sensor"
+                    title="Soil Moisture Sensor (Click to open/close)"
+                    width="280"
+                    height="180">
+                    <figcaption>Soil Moisture Sensor</figcaption>
+                </summary>
+
+                <div class="info" id="info-sensor">
+                    <h3>Soil Moisture Sensor</h3>
+                    <ul>
+                        <li><b>Real-Time Data:</b> Measures soil water content and sends live telemetry.</li>
+                        <li><b>Working Principle:</b> Detects electrical resistance or capacitance in soil.</li>
+                        <li><b>Smart Scheduling:</b> Determines exactly when to start and stop irrigation.</li>
+                        <li><b>Stress Prevention:</b> Prevents over-irrigation and root-zone water stress.</li>
+                        <li><b>Yield Boost:</b> Conserves water while optimizing crop root development.</li>
+                    </ul>
+                </div>
+            </details>
+            <p class="hint">▸ Click image to view details</p>
+        </figure>
+    </div>
+
+
+
+    <!-- Card 4: Weather Station -->
+    <div class="card">
+        <figure>
+            <details>
+                <summary>
+                    <img src="assets/weather_station.png"
+                    alt="Weather Monitoring Station"
+                    title="Weather Monitoring Station (Click to open/close)"
+                    width="280"
+                    height="180">
+                    <figcaption>Weather Monitoring Station</figcaption>
+                </summary>
+
+                <div class="info" id="info-weather">
+                    <h3>Weather Monitoring Station</h3>
+                    <ul>
+                        <li><b>Environmental Data:</b> Automated station tracking local micro-climate.</li>
+                        <li><b>Monitored Parameters:</b> Measures temperature, humidity, rain, and wind.</li>
+                        <li><b>AI Forecasting:</b> Integrates with models to predict upcoming rainfall.</li>
+                        <li><b>Cost Reduction:</b> Postpones scheduled irrigation when rain is expected.</li>
+                        <li><b>Precision Farming:</b> Enhances water-use efficiency and crop health.</li>
+                    </ul>
+                </div>
+            </details>
+            <p class="hint">▸ Click image to view details</p>
+        </figure>
+    </div>
+
+</div>
+
+</body>
+</html>
