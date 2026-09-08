@@ -1,0 +1,45 @@
+/* ============================================
+   Task 7: Table Styling for Price / Irrigation List
+   Concepts: border-collapse, nth-child(even),
+             header background color, center align
+   ============================================ */
+
+table {
+    width: 90%;
+    margin: 1.5rem auto;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 1.05rem;
+    margin-bottom: 0.6rem;
+    color: #2e7d32;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 0.65rem 0.8rem;
+    text-align: center;
+}
+
+th {
+    background-color: #2e7d32;
+    color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e8f5e9;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tfoot td {
+    font-weight: bold;
+    background-color: #e0e0e0;
+}

@@ -1,0 +1,43 @@
+/* ============================================
+   Experiment 4: Validation Feedback Styles
+   Concepts: Inline error messages beside fields,
+             highlighting an invalid field,
+             success and failure form messages
+   ============================================ */
+
+.error {
+    display: block;
+    color: #c62828;
+    font-size: 0.85rem;
+    margin-top: 0.2rem;
+}
+
+.invalid {
+    border: 1px solid #c62828;
+    background-color: #fdecea;
+}
+
+.invalid:focus {
+    border-color: #c62828;
+}
+
+#formMessage {
+    max-width: 640px;
+    margin: 1rem auto 0 auto;
+    padding: 0.7rem 1rem;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#formMessage.success {
+    background-color: #e8f5e9;
+    color: #1b5e20;
+    border: 1px solid #2e7d32;
+}
+
+#formMessage.failure {
+    background-color: #fdecea;
+    color: #c62828;
+    border: 1px solid #c62828;
+}

@@ -5,7 +5,6 @@
 ~$*
 
 # Editor / tooling
-.claude/
 .vscode/
 .idea/
 
