@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Registration - KisanSaathi (jQuery)</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Farmer Registration Form</h1>
+    </header>
+
+    <div class="form-container">
+
+        <form id="regForm" novalidate>
+
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your full name" autofocus>
+                <span class="error" id="errName"></span>
+
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile"
+                       placeholder="10-digit mobile number">
+                <span class="error" id="errMobile"></span>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="example@email.com">
+                <span class="error" id="errEmail"></span>
+
+                <label for="village">Village:</label>
+                <input type="text" id="village" name="village"
+                       placeholder="Enter village name">
+                <span class="error" id="errVillage"></span>
+            </fieldset>
+
+            <!-- Farm Details -->
+            <fieldset>
+                <legend>Farm Details</legend>
+
+                <label for="plotid">Plot ID:</label>
+                <input type="text" id="plotid" name="plotid"
+                       placeholder="e.g. PLOT-A">
+                <span class="error" id="errPlot"></span>
+
+                <label for="cropstage">Crop Stage:</label>
+                <select id="cropstage" name="cropstage">
+                    <option value="" disabled selected>-- Select Crop Stage --</option>
+                    <option value="germination">Germination</option>
+                    <option value="tillering">Tillering</option>
+                    <option value="grand-growth">Grand Growth</option>
+                    <option value="maturity">Maturity</option>
+                </select>
+                <span class="error" id="errCrop"></span>
+
+                <label for="soiltype">Soil Type:</label>
+                <select id="soiltype" name="soiltype">
+                    <option value="" disabled selected>-- Select Soil Type --</option>
+                    <option value="black-cotton">Black Cotton</option>
+                    <option value="red-laterite">Red Laterite</option>
+                    <option value="alluvial">Alluvial Soil</option>
+                    <option value="sandy">Sandy Soil</option>
+                    <option value="clay">Clay Soil</option>
+                </select>
+                <span class="error" id="errSoil"></span>
+
+                <label for="moisture">Soil Moisture (%):</label>
+                <input type="text" id="moisture" name="moisture"
+                       placeholder="0 to 100">
+                <span class="error" id="errMoisture"></span>
+
+                <label>Irrigation Method:</label>
+                <input type="radio" id="drip" name="irrigation" value="drip">
+                <label for="drip" style="display:inline;">Drip</label>
+                <input type="radio" id="furrow" name="irrigation" value="furrow">
+                <label for="furrow" style="display:inline;">Furrow</label>
+                <input type="radio" id="sprinkler" name="irrigation" value="sprinkler">
+                <label for="sprinkler" style="display:inline;">Sprinkler</label>
+                <input type="radio" id="flood" name="irrigation" value="flood">
+                <label for="flood" style="display:inline;">Flood</label>
+                <span class="error" id="errMethod"></span>
+
+                <label for="date">Registration Date:</label>
+                <input type="date" id="date" name="date">
+                <span class="error" id="errDate"></span>
+
+                <label for="photo">Upload Farm Photo:</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+            </fieldset>
+
+            <div class="btn-row">
+                <input type="submit" value="Register">
+                <input type="reset"  value="Clear Form">
+            </div>
+
+            <p id="formMessage"></p>
+
+        </form>
+    </div>
+
+    <footer>
+        <p>Arav Arun | Roll No. : 16010125013 | A1 Batch | WDL Experiment 5</p>
+    </footer>
+
+    <!-- jQuery Validation Script -->
+    <script src="validation.js"></script>
+
+</body>
+</html>
