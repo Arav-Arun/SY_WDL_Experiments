@@ -1,5 +1,5 @@
 /* ============================================
-   Experiment 4: Form Validation using JavaScript
+   Experiment 5: Form Validation using JavaScript
    Task 2: Required text fields + trim()
    Task 3: Mobile number and email (regex)
    Task 4: Selection, soil moisture and date
